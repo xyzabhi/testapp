@@ -1,0 +1,15 @@
+.circle {
+  width: 12px;
+  height: 12px;
+  border: solid black 1px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+.option {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.active {
+  background-color: #4385f4;
+}
