@@ -1,0 +1,33 @@
+.question-nav-circle {
+  width: 40px;
+  height: 40px;
+  border: solid 1px #b0b0af;
+  background-color: #d4d4d4;
+  color: #595959;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review {
+  background-color: blueviolet;
+  color: white;
+  border: 1px solid rgb(149, 65, 228);
+}
+.answered {
+  background-color: green;
+  color: white;
+  border: rgb(9, 196, 9) solid 1px;
+}
+.curr {
+  background-color: red;
+  color: white;
+  border: solid 1px #fa7e38;
+}
+.not-answered {
+  background-color: red;
+  color: white;
+  border: solid 1px #fa7e38;
+}
