@@ -3,7 +3,9 @@ import { useState } from "react";
 import "./App.css";
 import Question from "./components/Question.js";
 import QuestionNav from "./components/QuestionNav.js";
-import Login from "./components/Login.js";
+import UserDetail from "./components/details/UserDetail.js";
+import QuestionDetail from "./components/details/QuestionDetail.js";
+// import Login from "./components/Login.js";
 
 function App() {
   // Initaliazing an array with null elements that means initially nothing is answered for each question
@@ -44,14 +46,26 @@ function App() {
   return (
     <div className="main">
       <div className="question-section">
-        <Question
-          idx={currQ}
-          qtext={questions[currQ].question_desc}
-          options={questions[currQ].options}
-          isanswered={selectedOption[currQ]}
-          handler={updateSelectedAnswer}
-          currQStat={isAnsweredStat}
-        />
+        <div>
+          <p className="timer">Time left: 173.53</p>
+          <div className="lang">
+            <p>Choose language</p>
+            <select name="cars" id="cars">
+              <option value="volvo">Hindi</option>
+              <option value="saab">English</option>
+              <option value="mercedes">Gujrati</option>
+              <option value="audi">Tamil</option>
+            </select>
+          </div>
+          <Question
+            idx={currQ}
+            qtext={questions[currQ].question_desc}
+            options={questions[currQ].options}
+            isanswered={selectedOption[currQ]}
+            handler={updateSelectedAnswer}
+            currQStat={isAnsweredStat}
+          />
+        </div>
         <div className="btn-section">
           <div className="left-btn">
             <button
@@ -98,9 +112,25 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="x">
-        <p className="choose-q">Choose a Question</p>
-        <div className="question-nav">{renderedQuestionNav}</div>
+      <div className="right">
+        <div>
+          <div className="user-detail">
+            <UserDetail />
+          </div>
+          <div className="bd-box">
+            <div className="question-detail">
+              <QuestionDetail />
+            </div>
+            <p className="q-section">Level 1</p>
+            <div className="nav-sec">
+              <p className="choose-q">Choose a Question</p>
+              <div className="question-nav">{renderedQuestionNav}</div>
+            </div>
+          </div>
+        </div>
+        <div className="submit-sec">
+          <button className="submit-btn">Submit</button>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,12 @@
+.user-box {
+  display: flex;
+}
+.user-box img {
+  width: 100px;
+  height: 100px;
+  margin-right: 25px;
+}
+
+.user-name {
+  font-weight: 600;
+}
