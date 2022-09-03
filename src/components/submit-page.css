@@ -1,0 +1,17 @@
+.thanks-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.thanks-box div {
+  font-size: 30px;
+  font-weight: bold;
+  width: 25%;
+  height: 200px;
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

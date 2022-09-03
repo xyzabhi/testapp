@@ -34,6 +34,7 @@
 }
 .question-content {
   padding: 10px;
+  font-size: 18px;
 }
 .question-text {
   line-height: 1.6;
@@ -140,4 +141,15 @@ select {
   border: solid 1px #ddd;
   margin: 0;
   padding: 9px;
+}
+.sub-page {
+  display: none;
+}
+
+.main-none {
+  display: none;
+}
+
+.sub-page-show {
+  display: block;
 }
